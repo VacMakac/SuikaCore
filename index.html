@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuikaCore</title>
+  <link rel="icon" href="./assets/img/texture.png" type="image/x-icon">
+  <meta property="og:title" content="Suika / Watermelon Game Clone" />
+  <link rel="stylesheet" href="./assets/styles.css?=v5">
+</head>
+<body>
+  <div class="container">
+    
+    <div id="leaderboard">
+      <h3>Топ игроков</h3>
+      <div class="tabs">
+        <button data-tab="day">День</button>
+        <button data-tab="week">Неделя</button>
+        <button data-tab="month">Месяц</button>
+      </div>
+      <ul id="leaderboard-list"></ul>
+    </div>
+
+    <div id="game-canvas">
+      <div id="game-ui">
+        <p id="game-score"></p>
+
+        <div id="game-end-container">
+          <div id="game-end">
+            <div id="game-end-title">Игра окончена!</div>
+            <a id="game-end-link" href="">Попробовать снова</a>
+          </div>
+        </div>
+
+        <div id="game-status">
+          <div class="game-status-item">
+            <div class="game-status-label">Рекорд</div>
+            <div id="game-highscore-value">0</div>
+          </div>
+          <div class="game-status-item">
+            <div class="game-status-label">Следующий</div>
+            <img id="game-next-fruit" src="./assets/img/circle0.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="credits">
+    <p>Автор/Модификатор: <a href="https://tapy.me/vacmakac" target="_blank">VacMakac</a></p>
+    <p>Художники: <a href="https://t.me/artcorecommunity" target="_blank">АртКор</a></p>
+    <p>Оригинальный код: <a href="https://github.com/TomboFry/suika-game" target="_blank">TomboFry</a></p>
+  </div>
+
+  <script type="text/javascript" src="./assets/matter.js"></script>
+  <script type="text/javascript" src="./assets/index.js?v=9"></script>
+</body>
+</html>
